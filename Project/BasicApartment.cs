@@ -6,7 +6,7 @@ namespace Project
 {
     class BasicApartment: Apartment
     {
-        public BasicApartment(int floorNumber, int doorNumber, string residentName) :
+        public BasicApartment(int floorNumber, string doorNumber, string residentName) :
             base(floorNumber, doorNumber, residentName)
         {
         }

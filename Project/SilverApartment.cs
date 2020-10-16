@@ -6,7 +6,7 @@ namespace Project
 {
     class SilverApartment : Apartment
     {
-        public SilverApartment(int floorNumber, int doorNumber, string residentName) :
+        public SilverApartment(int floorNumber, string doorNumber, string residentName) :
             base(floorNumber, doorNumber, residentName)
         {
         }
@@ -17,6 +17,10 @@ namespace Project
             if (val > 0.2)
             {
                 Console.WriteLine("Hello");
+            }
+            else 
+            {
+                throw NobodyHomeException();
             }
         }
     }
