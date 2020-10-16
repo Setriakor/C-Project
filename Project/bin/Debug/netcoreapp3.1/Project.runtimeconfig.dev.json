@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Turntabl GH\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Turntabl GH\\.nuget\\packages"
+    ]
+  }
+}
