@@ -6,22 +6,24 @@ namespace Project
 {
     class SilverApartment : Apartment
     {
+        public SilverApartment(int floorNumber, string doorNumber) :
+            base(floorNumber, doorNumber)
+        {
+        }
+
         public SilverApartment(int floorNumber, string doorNumber, string residentName) :
             base(floorNumber, doorNumber, residentName)
         {
         }
 
-        public override void ringDoorbell()
+        public override string ringDoorbell()
         {
             double val = new Random().NextDouble();
-            if (val > 0.2)
+            if (val < 0.8)
             {
-                Console.WriteLine("Hello");
+                throw new NobodyHomeException("Nobody is home");
             }
-            else 
-            {
-                throw NobodyHomeException();
-            }
+            return "Hello";
         }
     }
 }

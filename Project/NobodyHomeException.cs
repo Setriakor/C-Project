@@ -6,6 +6,8 @@ namespace Project
 {
     class NobodyHomeException : Exception
     {
-
+        public NobodyHomeException(String message):base(message)
+        {
+        }
     }
 }

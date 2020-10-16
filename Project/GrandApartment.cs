@@ -7,14 +7,20 @@ namespace Project
     class GrandApartment : Apartment
     {
 
-        public GrandApartment(int floorNumber, string doorNumber, string residentName) :
-            base(floorNumber, doorNumber, residentName)
+        public GrandApartment(int floorNumber, string doorNumber) :
+            base(floorNumber, doorNumber)
         { 
         }
 
-        public override void ringDoorbell()
+        public GrandApartment(int floorNumber, string doorNumber,string residentName):
+            base(floorNumber,doorNumber,residentName)
         {
-            Console.WriteLine("Hello");
+        }
+
+        public override string ringDoorbell()
+        {
+            //Console.WriteLine("Hello");
+            return "Hello";
         }
     }
 }
